@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4127B796A47C4716806D76C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1290F2D9DE4326883D82DB /* libPods.a */; };
 		8B80A85417706E8800320140 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B80A85317706E8800320140 /* UIKit.framework */; };
 		8B80A85617706E8800320140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B80A85517706E8800320140 /* Foundation.framework */; };
 		8B80A85817706E8800320140 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B80A85717706E8800320140 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 		8B80A87A17706E8900320140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B80A85517706E8800320140 /* Foundation.framework */; };
 		8B80A88217706E8900320140 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B80A88017706E8900320140 /* InfoPlist.strings */; };
 		8B80A88517706E8900320140 /* LocationPrototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B80A88417706E8900320140 /* LocationPrototypeTests.m */; };
+		8B8FB82017708419002FA377 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FB81F17708419002FA377 /* libTestFlight.a */; };
+		8B8FB82317708450002FA377 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FB82217708450002FA377 /* libz.1.2.5.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1712FE80C7904F1AA7C9088B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		8B80A84F17706E8800320140 /* LocationPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B80A85317706E8800320140 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8B80A85517706E8800320140 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +62,10 @@
 		8B80A88117706E8900320140 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B80A88317706E8900320140 /* LocationPrototypeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationPrototypeTests.h; sourceTree = "<group>"; };
 		8B80A88417706E8900320140 /* LocationPrototypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationPrototypeTests.m; sourceTree = "<group>"; };
+		8B8FB81F17708419002FA377 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = LocationPrototype/libTestFlight.a; sourceTree = "<group>"; };
+		8B8FB82217708450002FA377 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		8B8FB82B177084BA002FA377 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		BF1290F2D9DE4326883D82DB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8FB82317708450002FA377 /* libz.1.2.5.dylib in Frameworks */,
+				8B8FB82017708419002FA377 /* libTestFlight.a in Frameworks */,
 				8B80A85417706E8800320140 /* UIKit.framework in Frameworks */,
 				8B80A85617706E8800320140 /* Foundation.framework in Frameworks */,
 				8B80A85817706E8800320140 /* CoreGraphics.framework in Frameworks */,
+				4127B796A47C4716806D76C8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,10 +98,13 @@
 		8B80A84417706E8800320140 = {
 			isa = PBXGroup;
 			children = (
+				8B8FB82217708450002FA377 /* libz.1.2.5.dylib */,
+				8B8FB81F17708419002FA377 /* libTestFlight.a */,
 				8B80A85917706E8800320140 /* LocationPrototype */,
 				8B80A87D17706E8900320140 /* LocationPrototypeTests */,
 				8B80A85217706E8800320140 /* Frameworks */,
 				8B80A85017706E8800320140 /* Products */,
+				1712FE80C7904F1AA7C9088B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +124,7 @@
 				8B80A85517706E8800320140 /* Foundation.framework */,
 				8B80A85717706E8800320140 /* CoreGraphics.framework */,
 				8B80A87717706E8900320140 /* SenTestingKit.framework */,
+				BF1290F2D9DE4326883D82DB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +132,7 @@
 		8B80A85917706E8800320140 /* LocationPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				8B8FB82B177084BA002FA377 /* TestFlight.h */,
 				8B80A86217706E8800320140 /* AppDelegate.h */,
 				8B80A86317706E8800320140 /* AppDelegate.m */,
 				8B80A86B17706E8800320140 /* ViewController.h */,
@@ -167,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B80A88817706E8900320140 /* Build configuration list for PBXNativeTarget "LocationPrototype" */;
 			buildPhases = (
+				4E76D27D23894097A7483101 /* Check Pods Manifest.lock */,
 				8B80A84B17706E8800320140 /* Sources */,
 				8B80A84C17706E8800320140 /* Frameworks */,
 				8B80A84D17706E8800320140 /* Resources */,
+				8FCC389863564118A3AFC523 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +268,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4E76D27D23894097A7483101 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
 		8B80A87417706E8900320140 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +294,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		8FCC389863564118A3AFC523 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -374,10 +420,15 @@
 		};
 		8B80A88917706E8900320140 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1712FE80C7904F1AA7C9088B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationPrototype/LocationPrototype-Prefix.pch";
 				INFOPLIST_FILE = "LocationPrototype/LocationPrototype-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LocationPrototype\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -385,11 +436,18 @@
 		};
 		8B80A88A17706E8900320140 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1712FE80C7904F1AA7C9088B /* Pods.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationPrototype/LocationPrototype-Prefix.pch";
 				INFOPLIST_FILE = "LocationPrototype/LocationPrototype-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LocationPrototype\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -447,6 +505,7 @@
 				8B80A88A17706E8900320140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B80A88B17706E8900320140 /* Build configuration list for PBXNativeTarget "LocationPrototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +514,7 @@
 				8B80A88D17706E8900320140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
