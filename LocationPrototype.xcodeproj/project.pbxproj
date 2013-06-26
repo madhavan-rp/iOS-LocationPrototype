@@ -26,6 +26,7 @@
 		8B80A88517706E8900320140 /* LocationPrototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B80A88417706E8900320140 /* LocationPrototypeTests.m */; };
 		8B8FB82017708419002FA377 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FB81F17708419002FA377 /* libTestFlight.a */; };
 		8B8FB82317708450002FA377 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FB82217708450002FA377 /* libz.1.2.5.dylib */; };
+		8BA0CC47177AC24300415CB9 /* FeedbackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0CC46177AC24300415CB9 /* FeedbackManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		8B8FB81F17708419002FA377 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = LocationPrototype/libTestFlight.a; sourceTree = "<group>"; };
 		8B8FB82217708450002FA377 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		8B8FB82B177084BA002FA377 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		8BA0CC45177AC24200415CB9 /* FeedbackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackManager.h; sourceTree = "<group>"; };
+		8BA0CC46177AC24300415CB9 /* FeedbackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackManager.m; sourceTree = "<group>"; };
 		BF1290F2D9DE4326883D82DB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +142,8 @@
 				8B80A86C17706E8800320140 /* ViewController.m */,
 				8B80A86E17706E8800320140 /* ViewController.xib */,
 				8B80A85A17706E8800320140 /* Supporting Files */,
+				8BA0CC45177AC24200415CB9 /* FeedbackManager.h */,
+				8BA0CC46177AC24300415CB9 /* FeedbackManager.m */,
 			);
 			path = LocationPrototype;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				8B80A86017706E8800320140 /* main.m in Sources */,
 				8B80A86417706E8800320140 /* AppDelegate.m in Sources */,
 				8B80A86D17706E8800320140 /* ViewController.m in Sources */,
+				8BA0CC47177AC24300415CB9 /* FeedbackManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "RCLocationManager.h"
 #import "TestFlight.h"
+#import "FeedbackManager.h"
 
 @interface ViewController ()
 
@@ -30,8 +31,13 @@
     // Start updating location changes.
     [locationManager startUpdatingLocationWithBlock:^(CLLocationManager *manager, CLLocation *newLocation, CLLocation *oldLocation) {
         TFLog(@"Speed is %f m/s",[newLocation speed]);
-        NSLog(@"Location got %@",[newLocation description]);
+        NSLog(@"Old Location: %@",[oldLocation description]);
+        NSLog(@"New Location: %@",[newLocation description]);
         NSLog(@"Updated location using block.");
+        if (oldLocation) {
+            [FeedbackManager giveMessage:@"Some Feedback"];
+        }
+        
     } errorBlock:^(CLLocationManager *manager, NSError *error) {
         NSLog(@"Error: %@", [error localizedDescription]);
     }];
